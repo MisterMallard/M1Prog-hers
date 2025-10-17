@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Welcome to my baking vlog!</h1>
+    <article class="main">
+        <h2 class="article header">Marshmallow Teacakes</h2>
+        <ul class="ingredients">
+            <li>Sugar</li>
+            <li>Eggwhite</li>
+            <li>Gelatine</li>
+        </ul>
+        <p class="articleText">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eligendi quam libero autem porro dolore reprehenderit quidem deserunt neque optio aperiam dolor ipsum cum obcaecati est, delectus a quaerat debitis.
+        </p>
+    </article>
+
+    <script>
+        const hour = new Date().getHours();
+        if ((hour >= 19) || (hour < 6)) {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+</body>
+</html>
+
